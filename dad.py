@@ -26,12 +26,12 @@ time_option = st.sidebar.radio("Select Time Type", ("గంటలు", "Time ల
 
 # Function to input time based on user selection for Tractor Functions
 def get_time_input(time_option):
-    if time_option == "Define Time":
+    if time_option == "గంటలు":
         hours = st.number_input("Enter Hours", min_value=0, step=1)
         minutes = st.number_input("Enter Minutes", min_value=0, max_value=59, step=1)
         total_time = hours + (minutes / 60)
         return total_time
-    elif time_option == "Calculate Time":
+    elif time_option == "Time లెక్కించటం":
         start_time = st.time_input("Enter Start Time")
         end_time = st.time_input("Enter End Time")
         start_time = datetime.combine(datetime.today(), start_time)
@@ -39,7 +39,7 @@ def get_time_input(time_option):
         time_diff = (end_time - start_time)
         total_time = time_diff.total_seconds() / 3600
         return total_time
-    elif time_option == "Seeding":
+    elif time_option == "విత్తనము":
         acres = st.number_input("Enter Acres", min_value=0.0, step=0.1)
         price_per_acre = st.number_input("Enter Price per Acre (in currency)", min_value=1.0, step=1.0)
         return acres, price_per_acre
