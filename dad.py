@@ -1,4 +1,4 @@
-%%writefile dad.py
+
 import streamlit as st
 from datetime import datetime, timedelta
 
