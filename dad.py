@@ -22,7 +22,7 @@ option = st.sidebar.selectbox(
 )
 
 # Sidebar for Time Type Selection (Tractor Function, Seeding, or Spraying)
-time_option = st.sidebar.radio("Select Time Type", ("Define Time", "Calculate Time", "Seeding", "Spraying"))
+time_option = st.sidebar.radio("Select Time Type", ("గంటలు", "Time లెక్కించటం", "విత్తనము", "Spraying"))
 
 # Function to input time based on user selection for Tractor Functions
 def get_time_input(time_option):
