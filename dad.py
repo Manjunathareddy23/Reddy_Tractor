@@ -18,7 +18,7 @@ def calculate_spraying_amount(tanks, price_per_tank):
 st.sidebar.title("Tractor Work Calculator")
 option = st.sidebar.selectbox(
     "Select Tractor Function",
-    ("గుంటుక", "రోటవేటర్‌", "Turning ప్లవ్", "3 ,7, 2 మడకలు", "టిల్లర్", "Bedding", "cross గుంటుక", "Spraying")
+    ("గుంటుక", "రోటవేటర్‌", "Turning ప్లవ్", "3 ,7, 2 మడకలు", "టిల్లర్", "Bedding", "cross గుంటుక")
 )
 
 # Sidebar for Time Type Selection (Tractor Function, Seeding, or Spraying)
